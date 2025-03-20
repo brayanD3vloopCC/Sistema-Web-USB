@@ -1,0 +1,18 @@
+
+El contenido debe llevar lo siguiente:
+Logo y banner personalizado
+
+Objetivos, misión, visión, plan curricular,
+
+aulas laboratorios, horarios, materias, biblioteca,
+ 
+dirección de carrera, docentes, jefes de carrera, autoridades cómo rector, etc.
+
+actividades extracurriculares como campeonatos de Futsal, voli bool, ajedrez, etc
+Actividades curriculares como ferias expo, robótica, etc
+Seminarios que se dará en el semestre
+Costo de la Carrera, formas de pagó, becas, en otros, requisitos para inscripción y convalidación
+Modalidades de graduacion
+Perfil profesional y laboral
+Pasantias dónde puedes hacerlo, empresa, horario tiempo, etc.
+Chat bot para respuestas en tiempo real,  WhatsApp, etc.

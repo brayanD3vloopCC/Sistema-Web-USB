@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot USB - Universidad Salesiana de Bolivia</title>
+    <link href="bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/interfaz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h3 mb-0">Chat Bot USB</h1>
+                <a href="index.html" class="btn btn-outline-light">Volver al Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="chat-container">
+                <div class="chat-box" id="chatBox">
+                    <div class="message bot-message">
+                        <p class="mb-0">¡Hola! Soy el asistente virtual de la Universidad Salesiana de Bolivia. ¿En qué puedo ayudarte?</p>
+                    </div>
+                    <!-- Los mensajes se agregarán aquí dinámicamente -->
+                </div>
+                <div class="chat-input">
+                    <form id="chatForm" class="d-flex gap-2">
+                        <input type="text" class="form-control" id="userInput" placeholder="Escribe tu mensaje aquí...">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Universidad Salesiana de Bolivia</h4>
+                    <p>Asistente virtual disponible 24/7 para responder tus consultas.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>¿Necesitas ayuda adicional? <a href="contacto.html" class="text-white">Contáctanos</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-darker py-3">
+            <div class="container text-center">
+                <p class="mb-0">&copy; 2024 Universidad Salesiana de Bolivia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        document.getElementById('chatForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userInput = document.getElementById('userInput');
+            const message = userInput.value.trim();
+            
+            if (message) {
+                // Agregar mensaje del usuario
+                addMessage(message, 'user');
+                
+                // Simular respuesta del bot
+                setTimeout(() => {
+                    const botResponse = getBotResponse(message);
+                    addMessage(botResponse, 'bot');
+                }, 1000);
+                
+                userInput.value = '';
+            }
+        });
+
+        function addMessage(message, type) {
+            const chatBox = document.getElementById('chatBox');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            messageDiv.innerHTML = `<p class="mb-0">${message}</p>`;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function getBotResponse(message) {
+            // Respuestas predefinidas basadas en palabras clave
+            const responses = {
+                'hola': '¡Hola! ¿En qué puedo ayudarte?',
+                'carrera': 'La carrera de Ingeniería en Sistemas tiene una duración de 5 años (10 semestres). ¿Te gustaría conocer más sobre el plan de estudios?',
+                'requisitos': 'Para inscribirte necesitas: Título de bachiller, Certificado de nacimiento, Carnet de identidad y 4 fotografías 4x4.',
+                'costos': 'El costo de la matrícula y las mensualidades varía según el semestre. ¿Te gustaría recibir información detallada por correo?',
+                'horarios': 'Ofrecemos turnos mañana, tarde y noche. Las clases se distribuyen de lunes a sábado.',
+                'becas': 'Contamos con becas por excelencia académica, deportivas y socioeconómicas. ¿Te gustaría más información sobre alguna en particular?'
+            };
+
+            // Buscar coincidencias en el mensaje
+            const lowercaseMessage = message.toLowerCase();
+            for (const [key, response] of Object.entries(responses)) {
+                if (lowercaseMessage.includes(key)) {
+                    return response;
+                }
+            }
+
+            // Respuesta por defecto
+            return 'Lo siento, no entiendo tu pregunta. ¿Podrías reformularla o ser más específico?';
+        }
+    </script>
+</body>
+</html>

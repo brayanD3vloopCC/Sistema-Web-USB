@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Universidad Salesiana de Bolivia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-main">
+        <div class="container">
+            <div class="d-flex">
+                <img src="img/home/logo usb.jpg" alt="Logo Universidad" class="me-3">
+                <div>
+                    <h1>Universidad Salesiana de Bolivia</h1>
+                    <p>Ingenieria de Sistemas</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/UniversidadSalesianadeBolivia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UCn7d1bG2yK2aN5zv7zK5v1g" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/usalesiana/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/universidad-salesiana-de-bolivia/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/home/logo.png" alt="Logo" style="height: 90px; width: 190px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IDS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="identidad.html">Identidad Institucional</a></li>
+                            <li><a class="dropdown-item" href="plan_estudios.html">Plan de Estudios</a></li>
+                            <li><a class="dropdown-item" href="horarios.html">Horarios</a></li>
+                            <li><a class="dropdown-item" href="matricula.html">Matrícula</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Información Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Información de la Carrera</h2>
+            
+            <!-- Información General -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-4">Información General</h3>
+                            <p class="lead">En esta sección encontrarás toda la información relevante sobre la carrera de Ingeniería de Sistemas, incluyendo requisitos de inscripción, noticias, convocatorias y avisos importantes.</p>
+                            <a href="https://www.usalesiana.edu.bo/la_paz/sitio/ing_de_sistemas/" class="btn btn-primary mt-3" target="_blank">
+                                <i class="fas fa-external-link-alt me-2"></i>Más Información
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acordeón de Información -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="infoAccordion">
+                        <!-- Requisitos -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#requisitos">
+                                    Requisitos de Inscripción
+                                </button>
+                            </h2>
+                            <div id="requisitos" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <img src="img/informacion/requisitos.jpg" class="img-fluid mb-3" alt="Requisitos">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Documento de Identidad</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Certificado de Nacimiento</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Fotografías 3x3</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Certificado de Bachiller</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Pago de matrícula</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Perfil Académico -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfil">
+                                    Perfil Académico
+                                </button>
+                            </h2>
+                            <div id="perfil" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <img src="img/informacion/perfil-profesional.jpg" class="img-fluid mb-3" alt="Perfil Académico">
+                                    <p>El Ingeniero de Sistemas egresado de la Universidad Salesiana de Bolivia está capacitado para:</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-primary me-2"></i>Diseñar y desarrollar sistemas informáticos</li>
+                                        <li><i class="fas fa-check-circle text-primary me-2"></i>Gestionar proyectos de tecnología</li>
+                                        <li><i class="fas fa-check-circle text-primary me-2"></i>Implementar soluciones empresariales</li>
+                                        <li><i class="fas fa-check-circle text-primary me-2"></i>Administrar redes y servidores</li>
+                                        <li><i class="fas fa-check-circle text-primary me-2"></i>Desarrollar aplicaciones móviles y web</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campo Ocupacional -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#campo">
+                                    Campo Ocupacional
+                                </button>
+                            </h2>
+                            <div id="campo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <img src="img/informacion/campo-ocupacional.jpg" class="img-fluid mb-3" alt="Campo Ocupacional">
+                                    <p>Nuestros egresados pueden desempeñarse en:</p>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-building text-primary me-2"></i>Empresas de desarrollo de software</li>
+                                        <li><i class="fas fa-building text-primary me-2"></i>Consultoras de tecnología</li>
+                                        <li><i class="fas fa-building text-primary me-2"></i>Departamentos de TI</li>
+                                        <li><i class="fas fa-building text-primary me-2"></i>Empresas de telecomunicaciones</li>
+                                        <li><i class="fas fa-building text-primary me-2"></i>Instituciones educativas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Costos -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#costos">
+                                    Costos y Pagos
+                                </button>
+                            </h2>
+                            <div id="costos" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <img src="img/informacion/costos.jpg" class="img-fluid mb-3" alt="Costos">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5 class="text-primary">Matrícula</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-money-bill-wave text-primary me-2"></i>Matrícula: Bs. 500</li>
+                                                <li><i class="fas fa-money-bill-wave text-primary me-2"></i>Mensualidad: Bs. 800</li>
+                                                <li><i class="fas fa-money-bill-wave text-primary me-2"></i>Seguro: Bs. 200</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="text-primary">Formas de Pago</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-credit-card text-primary me-2"></i>Tarjeta de Crédito/Débito</li>
+                                                <li><i class="fas fa-university text-primary me-2"></i>Transferencia Bancaria</li>
+                                                <li><i class="fas fa-money-bill text-primary me-2"></i>Efectivo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noticias y Avisos -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-newspaper me-2"></i>Últimas Noticias</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Inicio de Clases 2025</h5>
+                                        <small class="text-muted">3 días</small>
+                                    </div>
+                                    <p class="mb-1">Información sobre el inicio del semestre académico 2025.</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Convocatoria de Becas</h5>
+                                        <small class="text-muted">1 semana</small>
+                                    </div>
+                                    <p class="mb-1">Nueva convocatoria para becas de excelencia académica.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-bullhorn me-2"></i>Avisos Importantes</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Fecha Límite de Matrícula</h5>
+                                        <small class="text-muted">2 semanas</small>
+                                    </div>
+                                    <p class="mb-1">Recordatorio de la fecha límite para el proceso de matrícula.</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Talleres de Programación</h5>
+                                        <small class="text-muted">1 mes</small>
+                                    </div>
+                                    <p class="mb-1">Inscripciones abiertas para talleres de programación básica.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <img src="img/home/logo usb.jpg" alt="Logo" class="footer-logo">
+                            <h4>Universidad Salesiana de Bolivia</h4>
+                            <p>Formando líderes en tecnología</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-links">
+                            <h5>Enlaces Rápidos</h5>
+                            <ul>
+                                <li><a href="index.html"><i class="fas fa-chevron-right"></i>Inicio</a></li>
+                                <li><a href="plan_estudios.html"><i class="fas fa-chevron-right"></i>Plan de Estudios</a></li>
+                                <li><a href="horarios.html"><i class="fas fa-chevron-right"></i>Horarios</a></li>
+                                <li><a href="matricula.html"><i class="fas fa-chevron-right"></i>Matrícula</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-links">
+                            <h5>Contacto</h5>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Av. Chacaltaya Nro.1258, Zona Achachicala</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p>+591 2305210 / +591 72060082</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>secretaria.ingenieria@usalesiana.edu.bo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Universidad Salesiana de Bolivia. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Términos y Condiciones</a>
+                            <a href="#">Política de Privacidad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
